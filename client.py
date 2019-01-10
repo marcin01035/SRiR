@@ -67,8 +67,7 @@ class Rmi():
 		filesource = open(self.src_file, 'rb').read()
 		root = flame.evaluate(filesource)
 		print("result=", root)
-		flame.sendfile(self.dest_name, filesource)
-		print('Zawartosc pliku z serwera:',flame.getfile(self.dest_name))
+		
 
 	def funkcja(self):
 		modulesource = open ('function.py').read()
